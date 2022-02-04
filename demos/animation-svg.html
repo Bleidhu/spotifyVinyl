@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg animation base</title>
+    <link rel="stylesheet" href="./animation-svg.css">
+</head>
+
+<body>
+    <svg width="150px" height="150px" class="rotate" viewBox="0 0 200 200">
+        <image id="vinyl" x="calc(100 - 90)" y="calc(100 - 90)" width="180" height="180"
+            href="https://upload.wikimedia.org/wikipedia/commons/3/37/Vinyl_disc_icon.svg" />
+        <defs>
+            <clipPath id="myCircle">
+                <circle id="vinylCoverPath" cx="100" cy="100" r="50" fill="#FFFFFF" />
+            </clipPath>
+        </defs>
+        <image id="vinylCover" x="50" y="50" width="100" height="100" xlink:href="./cover.jpg"
+            clip-path="url(#myCircle)" />
+    </svg>
+    <script src="./animation-svg.js"></script>
+    <script src="./spotify-frontend.js"></script>
+</body>
+
+</html>
