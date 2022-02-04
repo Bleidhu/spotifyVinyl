@@ -20,8 +20,8 @@ class App extends Component{
     if(parsed.access_token)
     {
 
-      let accesToken = parsed.access_token;
-      console.log(accesToken);
+      //let accesToken = parsed.access_token;
+      let accesToken = sessionStorage.getItem('token');
       this.setState({loggedIn: true});
 
       setInterval(() => {fetch("https://api.spotify.com/v1/me/player/currently-playing", {
