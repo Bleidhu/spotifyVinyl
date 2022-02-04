@@ -75,7 +75,7 @@ class App extends Component{
         <Captions  name={(song?song?.item?.name:"no data")} artist={(song?Artists:"no data")} album={((song !== null)?song?.item?.album?.name:"no data")}/>
       </div> 
     : <button onClick={() => {
-      window.location = window.location.href.includes('localhost') ? 'http://localhost:8888/login': 'https://vinyl-backend.herokuapp.com/login';
+      window.location = window.location.href.includes('localhost') ? 'http://localhost:8888/login': '';
     }}
     style={{padding: '20px', 'fontSize': '50px', 'marginTop': '20px'}}>Sign In with Spotify</button>}
     
