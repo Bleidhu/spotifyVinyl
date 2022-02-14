@@ -47,6 +47,7 @@ class App extends Component{
         
       })
       .catch((err) => {
+        console.log("did catch " + err); 
         this.setState({ song: null }); 
         console.log(this.state.song)})}, 500);
   }
@@ -57,6 +58,7 @@ class App extends Component{
   let Artists
   if(song !== null)
   {
+      console.log(song);
     Artists = song.item.artists.reduce(function(previousValue, currentValue, index, array,) 
     {
       return previousValue + currentValue.name + ", ";
