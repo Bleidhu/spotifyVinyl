@@ -16,8 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "publishToHeroku": "cd ../ && git subtree push --prefix spotifyrotator heroku-vinyl-frontend master || true"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
